@@ -5,7 +5,7 @@ const rightBtn = document.getElementById("right");
 const img = document.querySelectorAll("#images img");
 
 let idx = 0;
-const interval = setInterval(run, 2000);
+var interval = setInterval(run, 3000);
 
 function run() {
   idx++;
@@ -22,9 +22,10 @@ function changeImage() {
 }
 
 function resetInterval() {
-  clearInterval(interval);
-  interval = setInterval(run,2000);
+    clearInterval(interval)
+  interval = setInterval(run, 2000)
 }
+
 
 rightBtn.addEventListener("click", () => {
   idx++;
